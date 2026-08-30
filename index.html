@@ -531,6 +531,18 @@
     border-radius: 3px;
     padding: 0.24rem 0.45rem;
   }
+  .project__links {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .project__links a {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--accent-ink);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
 
   /* ---------- skills ---------- */
   .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.3rem 2rem; }
@@ -898,6 +910,7 @@ const C = {
             "Menu built automatically from knowledge-base front-matter; Alembic migrations; Docker Compose deployment with restart policy.",
           ],
           stack: ["Python", "aiogram 3", "PostgreSQL / pgvector", "Claude API", "Alembic", "Docker", "pytest"],
+          links: [["Code — github.com/Kavdas/biart-support-bot", "https://github.com/Kavdas/biart-support-bot"]],
         },
         {
           name: "AITANYM — video pipeline", meta: "Dev & QA · 2026",
@@ -1132,6 +1145,7 @@ const C = {
             "Меню строится автоматически из фронтматтера базы знаний; миграции Alembic; деплой через Docker Compose с автоперезапуском.",
           ],
           stack: ["Python", "aiogram 3", "PostgreSQL / pgvector", "Claude API", "Alembic", "Docker", "pytest"],
+          links: [["Код — github.com/Kavdas/biart-support-bot", "https://github.com/Kavdas/biart-support-bot"]],
         },
         {
           name: "AITANYM — видео-пайплайн", meta: "Разработка и QA · 2026",
@@ -1371,6 +1385,15 @@ function sectionProjects(x) {
     const st = el("div", "stack");
     p.stack.forEach((t) => st.append(el("span", null, esc(t))));
     c.append(st);
+    if (p.links && p.links.length) {
+      const lk = el("div", "project__links");
+      p.links.forEach(([label, href]) => {
+        const a = el("a", null, esc(label) + " ↗");
+        a.href = href; a.target = "_blank"; a.rel = "noopener";
+        lk.append(a);
+      });
+      c.append(lk);
+    }
     wrap.append(c);
   });
   s.append(wrap);
