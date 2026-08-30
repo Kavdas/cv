@@ -52,9 +52,8 @@ bots on aiogram.
 ## Selected projects
 
 ### BIart Support Bot — internal employee-support assistant on Telegram
-**Code: [github.com/Kavdas/biart-support-bot](https://github.com/Kavdas/biart-support-bot)**
 Answers staff questions about Bitrix24 and the internal accounting system from a knowledge
-base, and hands off to a live operator when it can't.
+base, and hands off to a live operator when it can't. *(Private repository — internal tool.)*
 `Python` · `aiogram 3` · `PostgreSQL / pgvector` · `Claude API` · `Alembic` · `Docker` · `pytest`
 - RAG over a Markdown knowledge base: chunking, embeddings, pgvector similarity search
 - Answer synthesis with the Claude API; graded modes (relay-only → quote → full AI answers)
