@@ -90,7 +90,7 @@ Pages and content, theme-level CSS / JS, PHP templates and plugin work.
 
 - Email: nurdaulet.sadvakas@gmail.com
 - GitHub: [github.com/Kavdas](https://github.com/Kavdas)
-- LinkedIn: [linkedin.com/in/nurdaulet-sadvakas](https://www.linkedin.com/in/nurdaulet-sadvakas) <!-- TODO: confirm exact URL -->
+- LinkedIn: [linkedin.com/in/nurdaulet-sadvakas](https://www.linkedin.com/in/nurdaulet-sadvakas-21a6902b0/)
 
 ---
 
