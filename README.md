@@ -40,8 +40,9 @@ bots on aiogram.
   and TCP/IP, backup & recovery, user support and technical documentation.
 - **BIart (BI Education)** — Internal Systems & Automation · *2026 – ongoing*
   Bitrix24 CRM configuration (deal cards, pipeline stages, deal-flow rules); support of the
-  internal sales-accounting system («Учётка»); WordPress corporate site; built and run the
-  BIart Support Bot; documented the company's sales & operations processes end to end.
+  internal sales-accounting system («Учётка»); designing and building the school's WordPress
+  site; built and run the BIart Support Bot; documented the company's sales & operations
+  processes end to end.
 - **BI Education** — Full-stack Developer, Internship (AITANYM project) · *Mar – Aug 2026*
   Frontend & backend for an educational video platform; Python / Manim video pipeline; QA;
   outreach to partner schools. *Strong written reference available.*
@@ -71,17 +72,37 @@ Turns bank notifications and statements (Kaspi, Freedom, Halyk…) into categori
 Free-text notification parser (RU / KZ / translit / EN), statement import (CSV / XLSX / PDF)
 with deduplication, a rules engine with 20+ categories, month-end forecasting, offline PWA.
 
-### BIart & QCSF websites — WordPress
-Pages and content, theme-level CSS / JS, PHP templates and plugin work.
+### BIart — school website
+**Live demo: [kavdas.github.io/biart-demo](https://kavdas.github.io/biart-demo/)**
+`WordPress` · `PHP` · `JavaScript` · `Docker (wp-env)`
+Custom WordPress block theme built from the school's brand book, in two languages (RU / KZ) —
+native blocks only, self-hosted brand fonts, hand-built photo carousel. Security hardening
+(CSP, locked headers, XML-RPC disabled) and SEO (JSON-LD, Open Graph, hreflang).
+
+### Sift — self-hosted log triage
+**Code: [github.com/Kavdas/sift](https://github.com/Kavdas/sift)**
+`Python` · `FastAPI` · `SQLAlchemy (async)` · `SQLite` · `Claude API` · `pytest` · `CI/CD`
+A portfolio project built to show systems administration and applied AI as one artifact:
+mines templates out of raw logs (online Drain algorithm), catches what's statistically
+unusual with four independent detectors, correlates findings into incidents, and writes the
+on-call brief — via 16 heuristic playbooks or an LLM, with log content always treated as
+untrusted input. Desktop mode with a tray icon; 267 tests, ruff + mypy clean, CI on GitHub
+Actions. Now also watches this portfolio's own production service, the BIart Support Bot.
+
+### QCSF — official website
+`WordPress` · `PHP` · `HTML` · `CSS` · `JavaScript`
+Two internships (2024–2025) maintaining and modernizing the federation's WordPress site —
+theme templates, custom CSS / JS, PHP, responsiveness, redesign.
 
 ## Skills
 
 `Windows Server` `Active Directory` `Group Policy` `Linux` `TCP/IP` `Networking`
 `Backup & recovery` `Monitoring & logging` · `Bitrix24` `CRM administration`
 `Process documentation` · `Python` `FastAPI` `Flask` `REST API` `RAG` `pgvector`
-`Claude API` `aiogram 3` `Go (basics)` · `PostgreSQL` `SQLite` `Alembic` ·
+`Claude API` `aiogram 3` `Go (basics)` · `PostgreSQL` `SQLite` `SQLAlchemy (async)` `Alembic` ·
 `HTML` `CSS` `JavaScript` `WordPress` `PHP` `PWA` · `Docker` `Docker Compose` `Git`
-`pytest` · `Network security` `Malware analysis` `Threat detection` `Secure programming`
+`pytest` `CI/CD (GitHub Actions)` · `Network security` `Malware analysis` `Threat detection`
+`Secure programming`
 
 **Education:** B.Sc. Cybersecurity — Astana IT University (2022–2025)
 **Languages:** English B2 · Russian native · Kazakh native
