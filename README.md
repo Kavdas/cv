@@ -76,8 +76,9 @@ with deduplication, a rules engine with 20+ categories, month-end forecasting, o
 **Live demo: [kavdas.github.io/biart-demo](https://kavdas.github.io/biart-demo/)**
 `WordPress` · `PHP` · `JavaScript` · `Docker (wp-env)`
 Custom WordPress block theme built from the school's brand book, in two languages (RU / KZ) —
-native blocks only, self-hosted brand fonts, hand-built photo carousel. Security hardening
-(CSP, locked headers, XML-RPC disabled) and SEO (JSON-LD, Open Graph, hreflang).
+native blocks only, self-hosted brand fonts, hand-built photo carousel, a custom oEmbed
+integration (Yandex Maps), and a review wall sourced from the school's real listings (2GIS).
+Security hardening (CSP, locked headers, XML-RPC disabled) and SEO (JSON-LD, Open Graph, hreflang).
 
 ### Sift — self-hosted log triage
 **Code: [github.com/Kavdas/sift](https://github.com/Kavdas/sift)**
